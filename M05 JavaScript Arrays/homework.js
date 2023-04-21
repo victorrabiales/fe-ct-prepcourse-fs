@@ -238,6 +238,23 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+
+   var arreglo = [];
+
+   var bucle = num;
+
+   for (var i = 0; i < 10; i++) {
+       bucle = bucle + 2;  
+      if (bucle === i) break;
+      else {
+         arreglo.push(bucle);
+      }     
+   } 
+   if (i < 10) {
+     return "Se interrumpió la ejecución";
+   } else {
+      return arreglo;
+   }  
 }
 
 function continueStatement(num) {
@@ -247,6 +264,16 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+
+   let newArray = [];
+
+   for (var i = 0; i < 10; i++) {          
+      if (i === 5) continue;
+      num = num + 2;
+      newArray.push(num);
+   }  
+
+      return newArray;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
